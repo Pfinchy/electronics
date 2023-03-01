@@ -1,0 +1,118 @@
+int button1=13;
+int button2=12;
+int button3=11;
+int buttonState1=0;
+int buttonState2=0;
+int buttonState3=0;
+int w=0;
+int g=0;
+int y=0;
+int count=0;
+int green=8;
+int yellow=9;
+int white=10;
+void setup() {
+  Serial.begin(9600);
+  pinMode(button1,INPUT);
+  pinMode(green, OUTPUT);
+  pinMode(yellow, OUTPUT);
+  pinMode(white, OUTPUT);
+  if(count==0){
+
+      digitalWrite(yellow, HIGH);
+      delay(1000);
+      digitalWrite(yellow,LOW);
+      delay(1000);
+      
+      digitalWrite(white,HIGH);
+      delay(1000);
+      digitalWrite(white,LOW);
+      delay(1000);
+    
+      digitalWrite(green,HIGH);
+      delay(1000);
+      digitalWrite(green,LOW);      
+      delay(1000);
+      count=count+1;
+
+    }
+
+
+
+}
+
+void loop() {
+   
+
+
+    
+if(count==4){
+      
+      delay(1000);      
+      digitalWrite(yellow, HIGH);
+      delay(900);
+      digitalWrite(yellow,LOW);
+      delay(900);
+      
+      digitalWrite(white,HIGH);
+      delay(900);
+      digitalWrite(white,LOW);
+      delay(900);
+    
+      digitalWrite(green,HIGH);
+      delay(900);
+      digitalWrite(green,LOW);      
+      delay(900);
+      
+      digitalWrite(white,HIGH);
+      delay(900);
+      digitalWrite(white,LOW);      
+      delay(900);
+      
+      digitalWrite(yellow, HIGH);
+      delay(900);
+      digitalWrite(yellow,LOW);
+      delay(900);
+      
+      digitalWrite(green,HIGH);
+      delay(900);
+      digitalWrite(green,LOW);      
+      delay(900);
+      count=count+1;
+
+    }
+    
+    buttonState1 = digitalRead(button1);
+    buttonState2 = digitalRead(button2);
+    buttonState3 = digitalRead(button3);
+    
+   
+    
+    if(buttonState1==HIGH)
+    {
+      
+      count=count+1;
+      Serial.print(count);
+      digitalWrite(green,HIGH);
+      delay(300);
+      digitalWrite(green,LOW);      
+    }
+    if(buttonState2==HIGH)
+    {
+      count=count+1;
+      digitalWrite(yellow,HIGH);
+      delay(300);
+      digitalWrite(yellow,LOW); 
+    }    
+
+    if(buttonState3==HIGH)
+    {
+      count=count+1;
+      digitalWrite(white,HIGH);
+      delay(300);
+      digitalWrite(white,LOW); 
+    }    
+    
+}   
+
+
