@@ -8,4 +8,4 @@
     
     The device still needs large improvment in terms of smoothness. The way the device calulates movements is not smooth and does not properly account for head movement. 
     Another issue with the device is that it cannont register any mouse clicks or be currently worn. I would have liked to add a wearable version, better mouse movement code, 
-    and a clicking function. 
+    and a clicking function. I could not complete the project due to a combination of not enough time along with the fact that gryoscopic sensor codes is complex.
