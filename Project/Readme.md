@@ -3,4 +3,4 @@ Those with a possible hand disability can use this device that is wrapped around
 
 The device still needs large improvment in terms of smoothness. The way the device calulates movements is not smooth and does not properly account for head movement. 
 Another issue with the device is that it cannont register any mouse clicks or be currently worn. I would have liked to add a wearable version, better mouse movement code, 
-and a clicking function. 
+and a clicking function. I could not complete it due to lack of time and that groscopic code is challenging.
